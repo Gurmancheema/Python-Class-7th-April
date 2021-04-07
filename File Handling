@@ -1,5 +1,7 @@
 import csv
+storing=[]
 with open('realestatedata.csv', 'r') as file:
-  	reader = csv.reader(file)
-  	for each_row in reader:
-        	print(each_row)
+    reader = csv.reader(file)
+    for each_row in reader:
+        print(each_row)
+        storing.append(each_row)
